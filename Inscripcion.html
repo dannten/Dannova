@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <title>Formulario inscripcion familiares</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <h1>Formulario inscripción</h1>
+
+    <h2>Formulario inscripción de Familiares</h2>
+
+    <p>Inscriba a sus familiares</p>
+
+    <form action="procesar.php" method="POST">
+
+        <label for="primer-nombre">Primer Nombre:</label>
+        <input type="text" id="primer-nombre" name="primer_nombre" required>
+        
+        <br><br>
+
+        <label for="segundo-nombre">Segundo Nombre (Opcional):</label>
+        <input type="text" id="segundo-nombre" name="segundo_nombre">
+        
+    <br><br>
+
+        <label for="apellido">Apellido:</label>
+        <input type="text" id="apellido" name="apellido" required>
+
+    <br><br>
+
+    <label for="edad">Edad:</label>
+    <input type="number" id="edad" name="edad" min="1" max="100" required>    
+
+    <br><br>
+
+        <label for="fechaNacimiento">Fecha de nacimiento:</label>
+        <input type="date" name="fechaNacimiento"required> <br><br>
+
+        <label for="Celular">Celular:</label>
+        <input type="tel" name="telefono" pattern="[0-9]{10}"tittle> <br><br>
+
+        <label for="foto">Foto:</label>
+        <input type="file" id="foto" name:"foto" accept="image/*"> <br><br>
+
+        <label>Sexo:</label>  <br>
+        <input type="radio" id="masculino" name="sexo" value="masculino" required>
+        <label for="masculino">Masculino</label>  <br>
+
+        <input type="radio" id="femenino" name="sexo" value="femenino" required>
+        <label for="femenino">Femenino</label>  <br>
+
+        <input type="radio" id="otro" name="sexo" value="otro" required>
+        <label for="otro">Otro</label> <br><br>
+
+        <label for="correo">Correo electrónico:</label>
+        <input type="email" name="correo"> <br><br>
+
+        <label for="relacion">Relación con usted:</label>
+<select id="relacion" name="relacion">
+    <option value="padre">Padre</option>
+    <option value="madre">Madre</option>
+    <option value="hermano">Hermano</option>
+    <option value="hermana">Hermana</option>
+    <option value="tio">Tío</option>
+    <option value="tia">Tía</option>
+    <option value="otro">Otro</option>
+</select> <br><br>
+
+<label for="intereses">Intereses:</label>
+<select id="intereses" name="intereses[]" multiple>
+    <option value="deportes">Deportes</option>
+    <option value="lectura">Lectura</option>
+    <option value="musica">Música</option>
+    <option value="cine">Cine</option>
+    <option value="viajes">Viajes</option>
+</select>  <br><br>
+
+
+    <input type="submit" value="Enviar"> 
+
+
+    </form>
+
+</body>
+</html>

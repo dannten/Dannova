@@ -1,0 +1,63 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 7px 7% 7px 7%;
+}
+
+header {
+    background-color: #3b5998;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+nav ul {
+    background-color: #3b5998;
+    color: #f1faff;
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    font-size: 16px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #f1faff;
+}
+
+section {
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #f1faff;
+    border-radius: 20px;
+    max-width: 1000px;
+}
+
+section h2 {
+    color: #3b5998;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+section ul {
+    margin-left: 20px;
+    list-style-type: disc;
+}
+
+section ul li {
+    margin: 5px 0;
+}
+
+.Foto_Per{
+    display: flex;
+}
+.foto_perfil {
+    text-align: center;
+}
